@@ -3,6 +3,7 @@ matplotlib==3.5.1
 numpy==1.21.2
 pandas==1.4.1
 Pillow==9.0.1
-torch===0.4.1 torchvision===0.4.2 -f https://download.pytorch.org/whl/torch_stable.html
+torch===0.4.1 -f https://download.pytorch.org/whl/torch_stable.html
+torchvision===0.4.2 
 gunicorn==20.1.0
 
