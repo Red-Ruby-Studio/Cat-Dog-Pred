@@ -52,13 +52,13 @@ def get_tensor(image_bytes):
     return image
 
 def get_output(image_bytes):
-     with torch.no_grad():
+    with torch.no_grad():
         model = get_model()
         tensor = get_tensor(image_bytes)
         prediction = model(tensor).argmax()
         #prediction = model(image).argmax()
         prediction = class_names[prediction.item()]
-     return prediction
+    return prediction
 
 # timg = Image.open(r'./static//10000.jpg')
 # data = get_output(image_bytes=timg)
