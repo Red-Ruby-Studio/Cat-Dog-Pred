@@ -1,14 +1,10 @@
 import io
 import torch
 import torch.nn as nn 
-from torchvision import models
+from torchvision import models, datasets, transforms
 from PIL import Image
 import torchvision.transforms as transforms
-import io
-import torch
-import torch.nn as nn
 import torch.nn.functional as F
-from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 from PIL import Image
 
